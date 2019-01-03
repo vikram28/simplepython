@@ -1,0 +1,18 @@
+''' Snippet of code to manipulate flat file
+In this sample code columns are deleted from flat file and then file is saved in different name'''
+
+#Import Package
+import pandas;
+
+#Define variables
+# Input file path & delimiter
+file_name = "C:/xyz.txt";
+delimeter = "|";
+# Output file path & delimiter
+output_file_name = "C:/output.txt";
+output_delimeter = "|";
+#List of column which needs to be removed
+list_of_column = ["Column_name1", Column_name2]
+df = pd.read_csv(file_name,delimeter);
+df.drop(list_of_column, axis=1, inplace = True);
+df.to_csv(output_file_name, output_delimeter, index = False);
