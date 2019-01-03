@@ -1,3 +1,4 @@
+#! /usr/bin/python
 ''' Snippet of code to manipulate flat file
 In this sample code columns are deleted from flat file and then file is saved in different name'''
 
